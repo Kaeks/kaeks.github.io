@@ -25,3 +25,17 @@ body > i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#footer {
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  position: fixed;
+  z-index: 100;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 15px;
+  padding: 1px;
+}
