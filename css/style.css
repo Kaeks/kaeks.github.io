@@ -1,5 +1,5 @@
 body {
-  background: -webkit-repeating-radial-gradient(violet,indigo,blue,green,yellow,orange,red);
+  background: -webkit-repeating-radial-gradient(violet,indigo 16%,blue 33%,green 50%,yellow 66%,orange %84,red 100%);
   font-family: "Comic Sans MS";
   padding: 5px 25px;
   font-size: 18px;
