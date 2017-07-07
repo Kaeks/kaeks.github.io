@@ -14,17 +14,66 @@ h1 {
 }
 
 h1 > i {
-  font-size: 60px;
+  font-size: 70px;
+}
+
+p > i {
+  font-size: 50px;
 }
 
 body > i {
-  font-size: 15px;
+  font-size: 20px;
 }
+
+#buttonMemes {
+  position: fixed;
+  top: 30px;
+  left: 0px;
+  background-color: #6666FF;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Comic Sans MS";
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#buttonMinecraft {
+  position: fixed;
+  top: 30px;
+  left: 72px;
+  background-color: #6666FF;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Comic Sans MS";
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .nibber {
   background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+#header {
+  background-color: white;
+  color: black;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px;
+}
+
 #footer {
   background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
   border-style: solid;
