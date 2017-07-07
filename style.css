@@ -1,0 +1,27 @@
+body {
+  background: -webkit-repeating-radial-gradient(violet,indigo,blue,green,yellow,orange,red);
+  font-family: "Comic Sans MS";
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Comic Sans MS";
+  font-size: 80px;
+  color: firebrick
+}
+
+h1 > i {
+  font-size: 60px;
+}
+
+body > i {
+  font-size: 15px;
+}
+.nibber {
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
