@@ -1,0 +1,80 @@
+body {
+  background: -webkit-repeating-radial-gradient(violet, indigo, blue, green, yellow, orange, red, orange, yellow, green, blue, indigo, violet);
+  font-family: "Comic Sans MS";
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Comic Sans MS";
+  font-size: 80px;
+  color: firebrick
+}
+
+h1 > i {
+  font-size: 70px;
+}
+
+p > i {
+  font-size: 50px;
+}
+
+body > i {
+  font-size: 20px;
+}
+
+#buttonBack {
+  position: fixed;
+  top: 30px;
+  left: 0px;
+  background-color: #6666FF;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Comic Sans MS";
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nibber {
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#header {
+  background-color: white;
+  color: black;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px;
+}
+
+#footer {
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  position: fixed;
+  z-index: 100;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 15px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  padding: 1px;
+}
