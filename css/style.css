@@ -1,5 +1,5 @@
 html, body {
-  background-image: url(http://fjordstudio.dk/assets/img/bg/diamonds.png);
+  background-image: url(../assets/diamonds.png);
   padding: 0;
   margin: 0;
   height: 100%;
@@ -17,7 +17,7 @@ html, body {
   text-align: center;
   vertical-align: middle;
   line-height: 5px;
-  font-family: "Permanent Marker";
+  font-family: "Amatic SC";
   font-size: 30px;
   color: white;
   background: transparent;
@@ -41,13 +41,8 @@ html, body {
   text-align: right;
 }
 
-h1 {
-  font-family: "Permanent Marker";
-  font-size: 50px;
-}
-
 h2 {
-  font-family:"Roboto";
+  font-family:"Walter Turncoat";
 }
 
 #body_div {
@@ -56,6 +51,7 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   padding: 20px;
+  padding-top: 1px;
   position: relative;
   height: 100%;
   background-color: white;
@@ -67,17 +63,20 @@ h2 {
   position: fixed;
   width: 40%;
   margin-left: 30%;
+  font-family: "Courgette";
 }
 
 .nav_links {
   margin: 0;
-  padding: 3px;
+  padding: 1px;
+  font-family: "Courgette";
 }
 
 .nav_links li {
   display: inline-block;
   margin-top: 4px;
 }
+
 .nav_links li a {
   padding: 0 10px;
   color: darkgray;
