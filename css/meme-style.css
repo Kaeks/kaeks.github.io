@@ -5,6 +5,17 @@ body {
   font-size: 18px;
   margin: 0;
   color: #444;
+  text-align: center;
+}
+
+#header {
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 6px;
 }
 
 h1 {
@@ -31,7 +42,7 @@ li {
 
 #buttonBack {
   position: fixed;
-  top: 30px;
+  top: 40px;
   left: 0px;
   background-color: #6666FF;
   border: none;
@@ -46,30 +57,22 @@ li {
 }
 
 .nibber {
-  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  color: darkblue;
 }
 
-#header {
-  background-color: white;
-  color: black;
-  position: fixed;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1px;
+.margin{
+  margin: 1em;
 }
 
 #footer {
   background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
   position: fixed;
-  z-index: 100;
-  bottom: 0; 
+  border: 1px solid white;
+  z-index: 1;
+  bottom: 0;
   left: 0;
   width: 100%;
   text-align: right;
