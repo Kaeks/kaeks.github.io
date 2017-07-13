@@ -9,3 +9,22 @@ $(document).ready(function() {
     }
   });
 });
+
+var n = 0;
+function testClr(elmnt) {
+  var list = [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "indigo",
+    "violet"
+  ]
+  elmnt.style.color = list[n];
+  if (n == list.length-1) {
+    n = 0;
+  } else {
+    n++;
+  }
+}

@@ -25,6 +25,10 @@ body > i {
   font-size: 20px;
 }
 
+li {
+  display: inline-block;
+}
+
 #buttonBack {
   position: fixed;
   top: 30px;
