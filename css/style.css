@@ -57,7 +57,7 @@ h2 {
   user-select: none;
 }
 
-#body_div {
+#body_div1 {
   margin: 20px 30% 10px 30%;
   padding: 1px 20px 20px 20px;
   position: relative;
@@ -76,7 +76,7 @@ h2 {
   background: white;
 }
 
-#body_div:hover {
+#body_div1:hover {
   animation: pride 10s infinite, expand_dong .4s infinite;
   z-index:1000;
 }
@@ -112,7 +112,7 @@ h2 {
 #nav_bar {
   margin-left: 30%;
   width: 40%;
-  background: #000000;
+  background: black;
 }
 
 #footer_logo {
