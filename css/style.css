@@ -4,7 +4,7 @@ html, body {
   background-image: url(../assets/diamonds.png);
   padding: 0;
   margin: 0;
-  height: 1000px;
+  height: 100%;
   font-family: "Roboto";
 }
 
@@ -30,19 +30,6 @@ html, body {
   padding-bottom: 60px;
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background: #111111;
-  color: white;
-  font-size: 15px;
-  vertical-align: middle;
-  line-height: 50px;
-  text-align: right;
-}
-
 h1 {
   transition: all .2s ease-in-out;
 }
@@ -53,6 +40,16 @@ h1:hover {
 
 h2 {
   font-family:"Walter Turncoat";
+}
+
+.bold {
+  font-family: "Comic Sans MS";
+  font-weight: 900;
+  text-shadow: 0 0 5px black;
+  animation-name: pride-text;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transition: all 0.5s ease-in-out;
 }
 
 .clicky {
@@ -82,11 +79,18 @@ h2 {
 }
 
 #body_div3 {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: white;
+  color: black;
 }
 
 #body_div3:hover {
-  transform: translate(10em);
+  background: black;
+  color: white;
+}
+
+#body_div3:hover > .bold {
+  text-shadow: 0 0 5px white;
 }
 
 #nav {
@@ -113,16 +117,30 @@ h2 {
   padding: 0 10px;
   color: white;
   text-decoration: none;
+  transition: all 0.1s ease-in-out;
 }
 
 #nav li a:hover {
-  background: #444444;
+  background: #444;
 }
 
 .nav_fixed {
   top: 0;
   z-index: 1000;
   position: fixed;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #111;
+  color: white;
+  font-size: 15px;
+  vertical-align: middle;
+  line-height: 50px;
+  text-align: right;
 }
 
 #footer_logo {
@@ -153,4 +171,38 @@ h2 {
 
 #footer_logo_act:hover {
   transform: translate(0,-2.5em) scaleY(3.5);
+}
+
+.tooltip .tooltiptext {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  left: 94.5%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 1px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
 }
