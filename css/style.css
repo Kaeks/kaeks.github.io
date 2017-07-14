@@ -207,7 +207,7 @@ h2 {
 .tooltip:hover .tooltiptext {
   opacity: 1;
 }
-=======
+
 #tooltip{
   position: relative;
 }
@@ -229,4 +229,3 @@ h2 {
 #tooltip:hover #tooltiptext{
   visibility: visible;
 }
->>>>>>> 0106d7793d68f48b531d164700a0c1d85cfd6672
