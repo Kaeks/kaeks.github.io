@@ -1,3 +1,5 @@
+@import url(keyframes.css);
+
 html, body {
   background-image: url(../assets/diamonds.png);
   padding: 0;
@@ -57,62 +59,70 @@ h2 {
   user-select: none;
 }
 
-#body_div {
+.div_style {
   margin: 20px 30% 10px 30%;
   padding: 1px 20px 20px 20px;
   position: relative;
   height: 100%;
   background: white;
+}
+
+#body_div1 {
   animation-name: pride;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
-#body_div2 {
-  margin: 20px 30% 10px 30%;
-  padding: 1px 20px 20px 20px;
-  position: relative;
-  height: 100%;
-  background: white;
-}
-
-#body_div:hover {
+#body_div1:hover {
   animation: pride 10s infinite, expand_dong .4s infinite;
-  z-index:1000;
+  z-index:100;
 }
 
-.navbar-fixed {
-  top: 0;
-  z-index: 100;
-  position: fixed;
-  width: 40%;
+#body_div2 {
+}
+
+#body_div3 {
+  transition: all .5s ease-in-out;
+}
+
+#body_div3:hover {
+  transform: translate(10em);
+}
+
+#nav {
   margin-left: 30%;
-  font-family: "Pangolin";
-}
-
-.nav_links {
+  margin-right: 30%;
+  width: 40%;
   background: black;
-  margin: 0;
-  font-family: "Pangolin";
+  text-align: center;
+  font-family:"Pangolin";
 }
 
-.nav_links li {
+#nav ul {
+  margin: 0;
+  padding: 0;
   display: inline-block;
 }
-.nav_links li a {
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li a {
+  display: inline-block;
   padding: 0 10px;
   color: white;
   text-decoration: none;
 }
 
-.nav_links li a:hover {
+#nav li a:hover {
   background: #444444;
 }
 
-#nav_bar {
-  margin-left: 30%;
-  width: 40%;
-  background: #000000;
+.nav_fixed {
+  top: 0;
+  z-index: 1000;
+  position: fixed;
 }
 
 #footer_logo {
@@ -143,64 +153,4 @@ h2 {
 
 #footer_logo_act:hover {
   transform: translate(0,-2.5em) scaleY(3.5);
-}
-
-@keyframes expand_dong {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  25% {
-    transform: rotate(10deg) scale(1.1);
-  }
-  50% {
-    transform: rotate(0deg) scale(1);
-  }
-  75% {
-    transform: rotate(-10deg) scale(1.1);
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
-  }
-}
-
-@keyframes pride {
-  0% {
-    background: red;
-  }
-  8% {
-    background: orange;
-  }
-  16% {
-    background: yellow;
-  }
-  25% {
-    background: green;
-  }
-  33% {
-    background: blue;
-  }
-  41% {
-    background: indigo;
-  }
-  50% {
-    background: violet;
-  }
-  58% {
-    background: indigo;
-  }
-  66% {
-    background: blue;
-  }
-  75% {
-    background: green;
-  }
-  83% {
-    background: yellow;
-  }
-  91% {
-    background: orange;
-  }
-  100% {
-    background: red;
-  }
 }
