@@ -173,7 +173,6 @@ h2 {
   transform: translate(0,-2.5em) scaleY(3.5);
 }
 
-<<<<<<< HEAD
 .tooltip .tooltiptext {
   width: 100px;
   height: 20px;
@@ -186,7 +185,7 @@ h2 {
   position: absolute;
   z-index: 1;
   bottom: 80%;
-  left: 94.5%;
+  right: 7.5px;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -206,26 +205,4 @@ h2 {
 
 .tooltip:hover .tooltiptext {
   opacity: 1;
-}
-
-#tooltip{
-  position: relative;
-}
-
-#tooltiptext{
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-
-  bottom: 2em;
-  right: 2em;
-  position: absolute;
-  z-index: 1;
-}
-
-#tooltip:hover #tooltiptext{
-  visibility: visible;
 }
