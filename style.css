@@ -1,0 +1,208 @@
+html, body {
+  background-image: url(../assets/diamonds.png);
+  padding: 0;
+  margin: 0;
+  height: 1000px;
+  font-family: "Roboto";
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#banner {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5px;
+  font-family: "Permanent Marker";
+  font-size: 30px;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+}
+
+#body {
+  padding-bottom: 60px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #111111;
+  color: white;
+  font-size: 15px;
+  vertical-align: middle;
+  line-height: 50px;
+  text-align: right;
+}
+
+h1 {
+  transition: all .2s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-family:"Walter Turncoat";
+}
+
+.clicky {
+  user-select: none;
+}
+
+#body_div {
+  margin: 20px 30% 10px 30%;
+  padding: 1px 20px 20px 20px;
+  position: relative;
+  height: 100%;
+  background: white;
+  animation-name: pride;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#body_div2 {
+  margin: 20px 30% 10px 30%;
+  padding: 1px 20px 20px 20px;
+  position: relative;
+  height: 100%;
+  background: white;
+}
+
+#body_div:hover {
+  animation: pride 10s infinite, expand_dong .4s infinite;
+  z-index:100;
+}
+
+#nav {
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+  background: black;
+  text-align: center;
+  font-family:"Pangolin";
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li a {
+  display: inline-block;
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  background: #444444;
+}
+
+.nav_fixed {
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+}
+
+#footer_logo {
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  top: -69px;
+  transition: all .5s ease-in-out;
+}
+
+#footer_logo_act {
+  position: relative;
+  top: -38px;
+  left: calc(50% - 16px);
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  transition: all .5s ease-in-out;
+  z-index: 10;
+}
+
+#footer_logo_act:hover + #footer_logo {
+  transform: translate(0,-5em) rotate(360deg);
+}
+
+#footer_logo_act:hover {
+  transform: translate(0,-2.5em) scaleY(3.5);
+}
+
+@keyframes expand_dong {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+  75% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes pride {
+  0% {
+    background: red;
+  }
+  8% {
+    background: orange;
+  }
+  16% {
+    background: yellow;
+  }
+  25% {
+    background: green;
+  }
+  33% {
+    background: blue;
+  }
+  41% {
+    background: indigo;
+  }
+  50% {
+    background: violet;
+  }
+  58% {
+    background: indigo;
+  }
+  66% {
+    background: blue;
+  }
+  75% {
+    background: green;
+  }
+  83% {
+    background: yellow;
+  }
+  91% {
+    background: orange;
+  }
+  100% {
+    background: red;
+  }
+}
