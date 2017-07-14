@@ -81,6 +81,7 @@ h2 {
 #body_div2 {
 }
 
+<<<<<<< HEAD
 #body_div3 {
   transition: all .5s ease-in-out;
 }
@@ -98,6 +99,22 @@ h2 {
   font-family:"Pangolin";
 }
 
+=======
+#body_div:hover {
+  animation: pride 10s infinite, expand_dong .4s infinite;
+  z-index:100;
+}
+
+#nav {
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+  background: black;
+  text-align: center;
+  font-family:"Pangolin";
+}
+
+>>>>>>> 50c03664dd499b974b35d919fd4d36a7ff02032f
 #nav ul {
   margin: 0;
   padding: 0;
@@ -153,4 +170,68 @@ h2 {
 
 #footer_logo_act:hover {
   transform: translate(0,-2.5em) scaleY(3.5);
+<<<<<<< HEAD
 }
+=======
+}
+
+@keyframes expand_dong {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+  75% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes pride {
+  0% {
+    background: red;
+  }
+  8% {
+    background: orange;
+  }
+  16% {
+    background: yellow;
+  }
+  25% {
+    background: green;
+  }
+  33% {
+    background: blue;
+  }
+  41% {
+    background: indigo;
+  }
+  50% {
+    background: violet;
+  }
+  58% {
+    background: indigo;
+  }
+  66% {
+    background: blue;
+  }
+  75% {
+    background: green;
+  }
+  83% {
+    background: yellow;
+  }
+  91% {
+    background: orange;
+  }
+  100% {
+    background: red;
+  }
+}
+>>>>>>> 50c03664dd499b974b35d919fd4d36a7ff02032f
