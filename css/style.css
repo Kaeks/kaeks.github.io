@@ -154,3 +154,25 @@ h2 {
 #footer_logo_act:hover {
   transform: translate(0,-2.5em) scaleY(3.5);
 }
+
+#tooltip{
+  position: relative;
+}
+
+#tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+
+  bottom: 2em;
+  right: 2em;
+  position: absolute;
+  z-index: 1;
+}
+
+#tooltip:hover #tooltiptext{
+  visibility: visible;
+}
