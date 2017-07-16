@@ -10,7 +10,16 @@ html, body {
 
 #container {
   min-height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#dimmer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
 }
 
 #banner {
@@ -42,7 +51,7 @@ h2 {
   font-family:"Walter Turncoat";
 }
 
-.bold {
+.nibbold {
   font-family: "Comic Sans MS";
   font-weight: 900;
   text-shadow: 0 0 5px black;
@@ -60,7 +69,6 @@ h2 {
   margin: 20px 30% 10px 30%;
   padding: 1px 20px 20px 20px;
   position: relative;
-  height: 100%;
   background: white;
 }
 
@@ -97,9 +105,10 @@ h2 {
   margin-left: 30%;
   margin-right: 30%;
   width: 40%;
-  background: black;
+  background: white;
+  color: black;
   text-align: center;
-  font-family:"Pangolin";
+  font-family:"Roboto";
 }
 
 #nav ul {
@@ -115,13 +124,14 @@ h2 {
 #nav li a {
   display: inline-block;
   padding: 0 10px;
-  color: white;
+  margin: 0 0;
+  color: black;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 }
 
 #nav li a:hover {
-  background: #444;
+  background: #b3e6ff;
 }
 
 .nav_fixed {
@@ -206,3 +216,13 @@ h2 {
 .tooltip:hover .tooltiptext {
   opacity: 1;
 }
+
+.saturate {-webkit-filter: saturate(3); filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%); filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25); filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px); filter: blur(3px);}
+.invert {-webkit-filter: invert(100%); filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%); filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg); filter: hue-rotate(180deg);}
+.rss.opacity {-webkit-filter: opacity(50%); filter: opacity(50%);}
