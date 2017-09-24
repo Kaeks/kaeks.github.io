@@ -1,113 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Pangolin|Permanent+Marker|Roboto|Walter+Turncoat" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="icon" href="assets/icon.png"/>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css"/>
     <title>Kaeks' Homepage</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+	  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   </head>
+
   <body>
-    <div id="dimmer"></div>
-    <div id="container">
-      <div id="banner">
-        <a href="index.html" style="text-decoration: none; color: white">
-          <h1>Kaeks</h1>
-        </a>
-      </div>
-      <div id="nav">
+    <div id="wrapper">
+      <div id="header"><a href="index.html"><img src="assets/title.png" height="130px"/></a></div>
+      <div id="menu">
         <ul>
-          <li><a href="memes.html">Memes</a></li>
-          <li><a href="http://www.github.com/Kaeks/kaeks.github.io/">Github</a></li>
-          <li><a onclick="sayHeight()">Tell me the height!</a></li>
+          <li><a href="legacy/index.html">Legacy</a></li>
+          <li><a href="">about</a></li>
         </ul>
       </div>
-      <div id="body">
-        <div id="body_div1" class="div_style">
-          <h2>
-            KappaPride
-          </h2>
-          <p class="clicky" onclick="testClr(this)">
-            Click me to change my text color.
-          </p>
-        </div>
-        <div id="body_div2" class="div_style">
-          <h2>
-            Honestly I don't even know what to put here anymore so here's the Twitter feed of @duckoftheday
-          </h2>
+      <div id="content">
+        <div class="container">
+          <h1>Page Rework!</h1>
           <p>
-            <a class="twitter-timeline" href="https://twitter.com/duckoftheday" data-height="400">
-              Tweets by duckoftheday
-            </a>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            Waddup! This page has been reworked!
+            <br>
+            <br>
+            This is currently a work in progress so some (or maybe a lot of things) are still going to change. Not all features are added yet so stay tuned, visitor!
+            <br>
+            <br>
+            See you the next time I decide this doesn't look nice and rework it again. :^)
           </p>
-        </div>
-        <div id="body_div3" class="div_style">
-          <h2><i class="twa twa-fire"></i>Pastor Jim Colerick<i class="twa twa-fire"></i><br><i class="twa twa-fire"></i>Rappin' For Jesus<i class="twa twa-fire"></i></h2>
-          Well I wrote this song for the Christian youth<br>
-          I wanna teach kids the Christian truth<br>
-          If you wanna reach those kids on the street<br>
-          Then you gotta do a rap to a hip-hop beat<br>
-          I gave my sermon an urban kick<br>
-          My rhymes are fly, my beats are sick<br>
-          My crew is big and it keeps getting bigger<br>
-          That's cause Jesus Christ is my <span class="nibbold">nigga</span><br>
-          <br>
-          He's a life-changer, miracle-arranger<br>
-          Born to the virgin mom in a manger<br>
-          Water to wine, he's a drink exchanger<br>
-          And he died for your sins<br>
-          I preach the word, that's my gig<br>
-          And I rhyme better than Notorious BIG<br>
-          Other MCs, I wish them well<br>
-          But if you live in sin, you burn in hell<br>
-          Now I'ma pass the mic to my lovely wife<br>
-          She's a fly MC and the light of my life<br>
-          So to bust a rhyme without further ado<br>
-          Take it away, Mary Sue!<br>
-          <br>
-          Jesus Christ is my <span class="nibbold">nigga</span><br>
-          He's the son of the original G<br>
-          And he was sent to Earth to elucidate the way that we should be<br>
-          (What?)<br>
-          Like if another MC says<br>
-          "You're a freak!<br>
-          You're a lame-butt rapper<br>
-          And your rhymes are weak!"<br>
-          I don't get mad and I don't critique<br>
-          I forgive him, and turn the other cheek<br>
-          I don't blaspheme and I don't brag<br>
-          I don't cuss, and my pants don't sag<br>
-          I do exude a little Christian swag<br>
-          And I'm proud to be an American!<br>
-          <br>
-          Jesus Christ is our <span class="nibbold">nigga</span><br>
-          Let his light shine through ya!<br>
-          Let his love pop a cap in your butt and say HALLELUJAH!<br>
-          <br>
-          Jesus Christ is my <span class="nibbold">nigga</span><br>
-          He's a homie MC JC UC?<br>
-          He's an honest, caring, peace-loving <span class="nibbold">nigga</span><br>
-          Like me<br>
-          If you do drugs and think you're cool<br>
-          You need to come to Sunday school!<br>
-          Put those drugs in the garbage can<br>
-          Stand up tall, you're a Christian man!
         </div>
       </div>
       <div id="footer">
-        <div class="tooltip">
-          <a href="https://github.com/Kaeks/kaeks.github.io/" style="color: white; padding: 10px">
-            Kaeks 2017
-          </a>
-          <span class="tooltiptext">Kaeks' Github</span>
-        </div>
-        <div id="footer_logo_act"></div>
-        <img src="assets/icon.png" id="footer_logo">
+        <a title="Find me on GitHub!" href="https://github.com/Kaeks">© Kaeks 2017</a>
+        <div id="source"><a title="Source code on GitHub" href="https://github.com/Kaeks/kaeks.github.io">Source</a></div>
       </div>
     </div>
+    <div id="background"></div>
   </body>
 </html>
